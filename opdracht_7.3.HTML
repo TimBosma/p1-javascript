@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Incrementer</title>
+    <script>
+        var number = 0;
+
+        function incrementNumber() {
+            if (number < 10) {
+                number++;
+            } else {
+                number = 0;
+            }
+
+            document.getElementById("display").innerHTML = number;
+        }
+    </script>
+</head>
+<body>
+    <h1>Number Incrementer</h1>
+    <button onclick="incrementNumber()">Increment</button>
+    <div id="display">0</div>
+</body>
+</html>
